@@ -157,8 +157,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const email = document.querySelector('.input-field[name="email"]').value;
     const message = document.querySelector('textarea[name="message"]').value;
 
-    if (name.length < 5 || !email.includes('@')) {
-      alert("Please make sure the name is at least 5 characters long and the email contains '@'.");
+    if (name.length < 3 || !email.includes('@')) {
+      alert("Please make sure the name is at least 3 characters long and the email contains '@'.");
       return;
     }
 
